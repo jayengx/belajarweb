@@ -1,0 +1,87 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: auto;
+    background-color: rgb(43,32,113);
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+    padding: 100px 100px;
+}
+
+form h1 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 15pt;
+    padding: 5px;
+    color: white;
+}
+
+form {
+    width: 500px;
+    margin: auto;
+    backdrop-filter: blur(50px);
+    backdrop-filter: invert(20%);
+    backdrop-filter: sepia(20%);
+    margin-bottom: 50px;
+    border-radius: 30pxs;
+    filter: drop-shadow(0 0 2px rgb(83,83,83));
+}
+
+fieldset {
+    border: 1px solid #fff;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    font-weight: 600;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    background: transparent;
+}
+
+input[type="button"] {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: #512da8;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #512da8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    backdrop-filter: blur(50px);
+    backdrop-filter: invert(20%);
+    backdrop-filter: sepia(20%);
+}
+
+thead {
+    width: 50%;
+    font-size: 10pt;
+    font-family: Arial, Helvetica, sans-serifs;
+    color: #fff;
+    font-weight: bold;
+}
+
+thead td {
+    text-align: center;
+    border: 2px solid white;
+    padding: 5px;
+    text-transform: uppercase;
+}
