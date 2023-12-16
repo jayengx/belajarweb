@@ -1,9 +1,24 @@
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     overflow: auto;
-    background-color: rgb(43,32,113);
-    height: 100vh;
-    margin: 0;
+    background: linear-gradient(315deg, rgb(54, 12, 105) 3%, rgba(60,132,206,1) 38%, rgb(43, 32, 113) 68%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    height: 100vh; /* Mengisi tinggi layar */
+    margin: 0; /* Menghilangkan margin bawaan */
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
 }
 
 .container {
@@ -11,6 +26,7 @@ body {
     margin: auto;
     padding: 100px 100px;
 }
+  
 
 form h1 {
     text-align: center;
@@ -23,43 +39,45 @@ form h1 {
 form {
     width: 500px;
     margin: auto;
+    justify-content: center;
     backdrop-filter: blur(50px);
-    backdrop-filter: invert(20%);
+    backdrop-filter: invert(50%);
     backdrop-filter: sepia(20%);
     margin-bottom: 50px;
-    border-radius: 30pxs;
-    filter: drop-shadow(0 0 2px rgb(83,83,83));
+    border-radius: 30px;
+    filter: drop-shadow(0 0 2px rgb(83, 83, 83));
 }
 
 fieldset {
-    border: 1px solid #fff;
+    border: 1px solid rgb(184, 178, 178);
     padding: 40px;
     border-radius: 30px;
 }
 
+
 input[type="text"] {
     padding: 10px;
-    width: calc(100% - 20px);
+    width: calc(100% - 20px); /* menyesuaikan dengan border dan padding */
     margin-bottom: 10px;
     font-weight: 600;
-    border: 1px solid #fff;
+    border: 1px solid rgb(237, 239, 239);
     border-radius: 8px;
-    background: transparent;
+    background: #fff;
 }
 
 input[type="button"] {
     padding: 10px;
     margin-top: 10px;
     width: 100%;
-    background-color: #512da8;
-    border: 1px solid #fff;
+    background-color:  #512da8;
+    border: 1px solid;
     border-radius: 8px;
     color: #fff;
     cursor: pointer;
 }
 
 input[type="button"]:hover {
-    background-color: #512da8;
+    background-color:  #512da8;
 }
 
 table {
@@ -67,14 +85,14 @@ table {
     border-collapse: collapse;
     margin-top: 10px;
     backdrop-filter: blur(50px);
-    backdrop-filter: invert(20%);
-    backdrop-filter: sepia(20%);
+    backdrop-filter: invert(50%);
+    backdrop-filter: sepia(10%);
 }
 
 thead {
     width: 50%;
     font-size: 10pt;
-    font-family: Arial, Helvetica, sans-serifs;
+    font-family: 'Arial', sans-serif;
     color: #fff;
     font-weight: bold;
 }

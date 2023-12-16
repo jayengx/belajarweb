@@ -1,5 +1,5 @@
 function tambahData(){
-    const inputNama = document.getElementById("nama");
+    const inputNama = document.getElementById("nama");    
     const inputNim = document.getElementById("nim");
     const inputKelas = document.getElementById("kelas");
     const inputJurusan = document.getElementById("jurusan");
@@ -9,7 +9,7 @@ function tambahData(){
     const kelas = inputKelas.value;
     const jurusan = inputJurusan.value;
 
-    const tabelData = document.getElementById("data-table").getElementsByTagName('thead')[0];
+    const tabelData = document.getElementById("data-table").getElementsByTagName('thead')[0]; // Changed to tbody for rows
     const barisBaru = document.createElement("tr");
 
     const nilai = [nama, nim, kelas, jurusan];
@@ -20,10 +20,9 @@ function tambahData(){
         barisBaru.appendChild(sel);
     }
 
-    tabelData.appendChild(barisBaru)
+    tabelData.appendChild(barisBaru);
     inputNama.value = "";
     inputNim.value = "";
     inputKelas.value = "";
     inputJurusan.value = "";
-
 }
