@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belajar Web</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Protofolio Website</title>
 </head>
 <body>
-<div class="container">
-    <form>
-        <fieldset>
-                <h1>DATA MAHASISWA</h1>
-                <tr>
-                    <input type="text" id="nama" name="nama" placeholder="Nama Lengkap"/></td>
-                </tr>
-                <tr>
-                    <input type="text" id="nim" name="nim" placeholder="NIM (Nomer Induk Mahasiswa)"/></td>
-                </tr>
-                <tr>
-                    <input type="text" id="kelas" name="kelas" placeholder="Kelas"/></td>
-                </tr>
-                <tr>
-                    <input type="text" id="jurusan" name="jurusan" placeholder="Jurusan"/></td>
-                </tr>
-                <tr>
-                    <td colspan="2" style="text-align: center;">
-                        <input type="button" value="Tambah Data" onclick="tambahData()" />
-                    </td>
-                </tr>
-        </fieldset>
-    </form>
-    <table id="data-table" type="data-table">
-        <thead>
-            <tr>
-                <td>Nama</td>
-                <td>NIM</td>
-                <td>Kelas</td>
-                <td>Jurusan</td>
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+<div class="navbar">
+  <header>
+    <h1>Muhamad Ilham Tribiasto</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Beranda -->
+  <section id="about">
+    <h1 class="typing-text" id="text1">Hallo, nama saya <span>ilham</span></h1>
+    <h1 class="typing-text" id="text2">Saya sedang belajar membuat webiste sederhana</h1>
+
+     <!-- Profile -->
+     <div class="profile-info">
+      <div class="profile-pic">
+      <img src="saya.png" alt="Foto Profil">
+      </div>
+
+      <div class="form">
+        <p>klik tombol dibawah</p>
+        <a href="FormMahasiswa/index.html">NEXT FORM DATA MAHASISWA</a>
+      </div>
+      
+      <!-- Kontak -->
+      <div class="contact">
+        <p><b>My Social Media</b></p>
+        <a href="https://api.whatsapp.com/send/?phone=6285775633043&text&type=phone_number&app_absent=0" target="_blank" class="fa fa-whatsapp"></a>
+        <a href="https://www.instagram.com/llham272/" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://www.facebook.com/profile.php?id=100040497760727" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://t.me/jayengx" target="_blank" class="fa fa-telegram"></a>
+        <a href="https://github.com/jayengx" target="_blank" class="fa fa-github"></a>
+      </div>
+      <div class="profile-desc">
+        <!--profile-desc-->
     <script src="script.js"></script>
+  </section>  
 </div>
 </body>
 </html>

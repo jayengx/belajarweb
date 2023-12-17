@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <form>
+        <fieldset>
+                <h1>DATA MAHASISWA</h1>
+                <tr>
+                    <input type="text" id="nama" name="nama" placeholder="Nama Lengkap"/></td>
+                </tr>
+                <tr>
+                    <input type="text" id="nim" name="nim" placeholder="NIM (Nomer Induk Mahasiswa)"/></td>
+                </tr>
+                <tr>
+                    <input type="text" id="kelas" name="kelas" placeholder="Kelas"/></td>
+                </tr>
+                <tr>
+                    <input type="text" id="jurusan" name="jurusan" placeholder="Jurusan"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="button" value="Tambah Data" onclick="tambahData()" />
+                    </td>
+                </tr>
+        </fieldset>
+    </form>
+    <table id="data-table" type="data-table">
+        <thead>
+            <tr>
+                <td>Nama</td>
+                <td>NIM</td>
+                <td>Kelas</td>
+                <td>Jurusan</td>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</div>
+</body>
+</html>

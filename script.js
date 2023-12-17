@@ -1,28 +1,9 @@
-function tambahData(){
-    const inputNama = document.getElementById("nama");    
-    const inputNim = document.getElementById("nim");
-    const inputKelas = document.getElementById("kelas");
-    const inputJurusan = document.getElementById("jurusan");
+const text1 = document.getElementById('text1');
+const text2 = document.getElementById('text2');
 
-    const nama = inputNama.value;
-    const nim = inputNim.value;
-    const kelas = inputKelas.value;
-    const jurusan = inputJurusan.value;
+text1.style.animation = 'typing 3s steps(1000, end) forwards';
 
-    const tabelData = document.getElementById("data-table").getElementsByTagName('thead')[0]; // Changed to tbody for rows
-    const barisBaru = document.createElement("tr");
-
-    const nilai = [nama, nim, kelas, jurusan];
-
-    for(let i = 0; i < nilai.length; i++){
-        const sel = document.createElement("td");
-        sel.textContent = nilai[i];
-        barisBaru.appendChild(sel);
-    }
-
-    tabelData.appendChild(barisBaru);
-    inputNama.value = "";
-    inputNim.value = "";
-    inputKelas.value = "";
-    inputJurusan.value = "";
-}
+setTimeout(() => {
+  text2.style.display = 'block'; // Menampilkan teks kedua setelah teks pertama selesai
+  text2.style.animation = 'typing 3s steps(1000, end) forwards';
+}, 2000); // Delay untuk memulai teks kedua setelah teks pertama selesai
