@@ -120,7 +120,7 @@ nav ul li a {
 .form a{
   display: inline-flex;
   justify-content: center;
-  font-size: 15pt;
+  font-size: 12pt;
   background-color: rgb(90, 5, 248);
   color: white;
   padding: 15px;
@@ -128,7 +128,7 @@ nav ul li a {
   border: 1px solid white;
   cursor: pointer;
   text-decoration: none;
-  width: 400px;
+  width: 350px;
 }
 
  /* Style all font awesome icons */
